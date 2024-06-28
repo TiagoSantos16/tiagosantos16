@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefólio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div id="language-toggle">
+            <button id="pt-btn" class="active">PT</button>
+            <button id="en-btn">EN</button>
+        </div>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Bem-vindo ao meu Portefólio</h1>
+    </div>
+
+    <section id="about">
+        <h2 class="pt">Sobre Mim</h2>
+        <h2 class="en">About Me</h2>
+        <p class="pt">Sou um entusiasta da engenharia informática, com um forte interesse em inteligência artificial. Atualmente, estou concluindo meu mestrado em IA e já acumulei experiência prática através de estágios focados na aplicação de IA em problemas do mundo real.</p>
+        <p class="en">I'm a computer engineering enthusiast with a strong interest in artificial intelligence. Currently completing my master's degree in AI and gaining practical experience through internships focused on applying AI to real-world problems.</p>
+        <img src="images/profile.jpg" alt="Foto de perfil">
+    </section>
+
+    <section id="skills">
+        <h2 class="pt">Habilidades</h2>
+        <h2 class="en">Skills</h2>
+        <p>Lista de habilidades.</p>
+    </section>
+
+    <section id="projects">
+        <h2 class="pt">Projetos</h2>
+        <h2 class="en">Projects</h2>
+        <div class="project">
+            <img src="images/project1.jpg" alt="Planeador de viagens com IA">
+            <h3 class="pt">Planeador de viagens com IA</h3>
+            <h3 class="en">Travel Planner with AI</h3>
+            <p class="pt">Desenvolvi um sistema baseado em IA que permite a criação de itinerários de viagem personalizados. O usuário pode fornecer detalhes de uma viagem anterior através de um PDF, e a IA gera um plano semelhante para outra cidade.</p>
+            <p class="en">I developed an AI-based system that allows for personalized travel itinerary creation. Users can provide details of a previous trip via PDF, and the AI generates a similar plan for another city.</p>
+        </div>
+        <div class="project">
+            <img src="images/project2.jpg" alt="Divisor automático de conta">
+            <h3 class="pt">Divisor automático de conta</h3>
+            <h3 class="en">Automatic Bill Splitter</h3>
+            <p class="pt">Criei uma aplicação que utiliza visão computacional e IA para dividir automaticamente contas em restaurantes. A partir de uma foto do recibo, a IA identifica os itens consumidos por cada pessoa e calcula a divisão justa da conta.</p>
+            <p class="en">I created an application that uses computer vision and AI to automatically split bills at restaurants. From a photo of the receipt, the AI identifies items consumed by each person and calculates a fair split of the bill.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="pt">Contato</h2>
+        <h2 class="en">Contact</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Seu Nome</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
