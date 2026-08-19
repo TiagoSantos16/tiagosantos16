@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiago Santos — Portfolio</title>
+  <meta name="description" content="Portfolio of Tiago Santos — AI master's student. Peer-reviewed research on foundation models for Earth observation, plus projects in LLMs, computer vision and cloud." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="crt" aria-hidden="true"></div>
+
+  <header class="site-head" id="top">
+    <div class="head-inner">
+      <a class="brand" href="#home" data-en="tiago.santos/" data-pt="tiago.santos/">tiago.santos/</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home" data-en="home" data-pt="início">home</a>
+        <a href="#about" data-en="about" data-pt="sobre">about</a>
+        <a href="#skills" data-en="skills" data-pt="habilidades">skills</a>
+        <a href="#projects" data-en="projects" data-pt="projetos">projects</a>
+        <a href="#contact" data-en="contact" data-pt="contato">contact</a>
+      </nav>
+      <!-- language toggle (hidden for now; PT still works via js/scripts.js)
+      <div class="lang" role="group" aria-label="Language">
+        <button class="lang-btn is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" type="button" data-lang="pt" aria-pressed="false">PT</button>
+      </div>
+      -->
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HOME / HERO ============ -->
+    <section class="hero section" id="home">
+      <canvas class="hero-canvas" id="field" aria-hidden="true"></canvas>
+
+      <div class="hero-inner">
+        <p class="eyebrow"><span data-en="> site: ai + code projects" data-pt="> site: projetos de ia e código">&gt; site: ai + code projects</span><span class="cursor" aria-hidden="true"></span></p>
+
+        <h1 class="hero-title">
+          <span class="sr-only" data-en="Tiago Santos" data-pt="Tiago Santos">Tiago Santos</span>
+          <span class="hero-title-display" aria-hidden="true">Tiago Santos</span>
+        </h1>
+
+        <p class="tagline" id="tagline" data-en="computer engineering background · AI master's student" data-pt="formação em engenharia de computação · mestrado em IA">computer engineering background · AI master's student</p>
+
+        <div class="hero-actions">
+          <a class="btn" href="#projects" data-en="view projects" data-pt="ver projetos">view projects</a>
+          <a class="btn btn-ghost" href="#contact" data-en="get in touch" data-pt="entra em contacto">get in touch</a>
+        </div>
+
+        <a class="scroll-hint" href="#about"><span data-en="scroll">scroll</span><span class="drip" aria-hidden="true"></span></a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section reveal" id="about">
+      <div class="wrap">
+        <p class="eyebrow" data-en="// about" data-pt="// sobre">// about</p>
+        <div class="about-grid">
+          <!-- profile photo (commented out for now; re-enable when a real photo is ready)
+          <figure class="about-figure">
+            <img src="images/profile.png" alt="Portrait of Tiago Santos" width="320" height="360" loading="lazy" />
+            <figcaption data-en="~ placeholder, replace with a real photo" data-pt="~ marcador, substitua por uma foto real">~ placeholder, replace with a real photo</figcaption>
+          </figure>
+          -->
+
+          <div class="about-copy">
+            <h2 data-en="About me" data-pt="Sobre mim">About me</h2>
+            <p data-en="I'm finishing a Master's in AI with a minor in cloud computing and recently published a peer-reviewed paper on adapting foundation models for Earth observation. Beyond academic research, I'm passionate about machine learning and enjoy building practical software that uses AI to automate tasks and solve real-world problems. This portfolio shows some of my personal projects." data-pt="Estou a concluir um Master's em IA com minor em cloud computing e publiquei recentemente um artigo peer-reviewed sobre adaptação de foundation models para Earth observation. Para além da investigação académica, sou apaixonado por machine learning e gosto de construir software prático que usa AI para automatizar tarefas e resolver problemas reais. Este portfólio mostra alguns dos meus projetos pessoais.">I'm finishing a Master's in AI with a minor in cloud computing and recently published a peer-reviewed paper on adapting foundation models for Earth observation. Beyond academic research, I'm passionate about machine learning and enjoy building practical software that uses AI to automate tasks and solve real-world problems. This portfolio shows some of my personal projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section reveal" id="skills">
+      <div class="wrap">
+        <p class="eyebrow" data-en="// skills" data-pt="// habilidades">// skills</p>
+        <h2 class="section-title" data-en="Toolset">Toolset</h2>
+        <ul class="chips">
+          <li data-en="Machine Learning">Machine Learning</li>
+          <li data-en="Deep Learning">Deep Learning</li>
+          <li data-en="Computer Vision">Computer Vision</li>
+          <li data-en="LLMs &amp; Prompting">LLMs &amp; Prompting</li>
+          <li data-en="Semantic Segmentation">Semantic Segmentation</li>
+          <li data-en="Python">Python</li>
+          <li data-en="PyTorch">PyTorch</li>
+          <li data-en="Cloud Computing">Cloud Computing</li>
+          <li data-en="MLOps">MLOps</li>
+          <li data-en="PostgreSQL">PostgreSQL</li>
+          <li data-en="Docker">Docker</li>
+          <li data-en="Data Analysis" data-pt="Análise de Dados">Data Analysis</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section reveal" id="projects">
+      <div class="wrap">
+        <p class="eyebrow" data-en="// projects" data-pt="// projetos">// projects</p>
+        <h2 class="section-title" data-en="Selected work" data-pt="Trabalho selecionado">Selected work</h2>
+
+        <div class="projects">
+          <!-- Project 1 — Published research -->
+          <article class="term reveal">
+            <div class="term-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="term-title" data-en="sam2_unet_osm_lulc.py">sam2_unet_osm_lulc.py</span>
+            </div>
+            <div class="term-body">
+              <figure class="term-shot">
+                <img src="images/paper.png" alt="SAM2-UNet LULC segmentation map" width="560" height="320" loading="lazy" />
+                <figcaption class="sr-only" data-en="Published Research: Adapting SAM2-UNet for High-Resolution LULC">Published Research: Adapting SAM2-UNet for High-Resolution LULC</figcaption>
+              </figure>
+              <h3 data-en="Adapting SAM2-UNet for High-Resolution LULC">Adapting SAM2-UNet for High-Resolution LULC</h3>
+                <p data-en="Fine-tuned SAM2, a large foundation model, for high-resolution land cover segmentation. During training, OSM road vectors act as a distance-transform soft target, so the network learns the structure of roads and infrastructure. That auxiliary branch is removed after training, so the deployed model runs on plain RGB imagery and needs no extra data at inference. The peer-reviewed paper reports strong Boundary IoU on thin features, plus a zero-shot UAV test shot in Portugal.">Fine-tuned SAM2, a large foundation model, for high-resolution land cover segmentation. During training, OSM road vectors act as a distance-transform soft target, so the network learns the structure of roads and infrastructure. That auxiliary branch is removed after training, so the deployed model runs on plain RGB imagery and needs no extra data at inference. The peer-reviewed paper reports strong Boundary IoU on thin features, plus a zero-shot UAV test shot in Portugal.</p>
+                <p class="term-meta" data-en="[ PyTorch · SAM2 · U-Net · GeoTIFF ]">[ PyTorch · SAM2 · U-Net · GeoTIFF ]</p>
+                <p class="term-links">
+                  <a class="chip" href="https://github.com/tiagosantos63390/SAM2-UNet-OSM-LULC" target="_blank" rel="noopener" data-en="[ github ]">[ github ]</a>
+                  <a class="chip chip--ghost" href="#" data-alert-en="PDF not published yet. I'll add the link once it's out." data-alert-pt="O PDF ainda não está público. Vou adicionar o link assim que sair." data-en="[ pdf ]">[ pdf ]</a>
+                </p>
+            </div>
+          </article>
+
+          <!-- Project 2 — Master's thesis -->
+          <article class="term reveal">
+            <div class="term-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="term-title" data-en="master_thesis_models.py">master_thesis_models.py</span>
+            </div>
+            <div class="term-body">
+              <figure class="term-shot">
+                <img src="images/thesis.png" alt="Thesis evaluation panels" width="560" height="320" loading="lazy" />
+                <figcaption class="sr-only" data-en="Master's Thesis: Foundation Models for Earth Observation">Master's Thesis: Foundation Models for Earth Observation</figcaption>
+              </figure>
+              <h3 data-en="Foundation Models for Earth Observation">Foundation Models for Earth Observation</h3>
+<p data-en="A SAM2-UNet architecture I adapted for semantic segmentation of satellite imagery. I evaluated it on land cover maps with spatial metrics (mIoU, Boundary IoU), which measure boundary precision rather than overall agreement. It's the code behind my master's thesis.">A SAM2-UNet architecture I adapted for semantic segmentation of satellite imagery. I evaluated it on land cover maps with spatial metrics (mIoU, Boundary IoU), which measure boundary precision rather than overall agreement. It's the code behind my master's thesis.</p>
+                <p class="term-meta" data-en="[ PyTorch · SAM2 · U-Net · mIoU ]">[ PyTorch · SAM2 · U-Net · mIoU ]</p>
+                <p class="term-links">
+                  <a class="chip chip--ghost" href="#" data-alert-en="Repository not public yet. I'll add the link once it's out." data-alert-pt="O repositório ainda não está público. Vou adicionar o link assim que sair." data-en="[ github ]">[ github ]</a>
+                  <a class="chip chip--ghost" href="#" data-alert-en="PDF not published yet. I'll add the link once it's out." data-alert-pt="O PDF ainda não está público. Vou adicionar o link assim que sair." data-en="[ pdf ]">[ pdf ]</a>
+                </p>
+            </div>
+          </article>
+
+          <!-- Project 3 — BranchGPT -->
+          <article class="term reveal">
+            <div class="term-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="term-title" data-en="branchgpt.py">branchgpt.py</span>
+            </div>
+            <div class="term-body">
+              <figure class="term-shot">
+                <img src="images/branchgpt.png" alt="BranchGPT conversation tree" width="560" height="320" loading="lazy" />
+                <figcaption class="sr-only" data-en="BranchGPT: Tree-Based AI Conversational Agent">BranchGPT: Tree-Based AI Conversational Agent</figcaption>
+              </figure>
+              <h3 data-en="BranchGPT: Tree-Based AI Conversational Agent">BranchGPT: Tree-Based AI Conversational Agent</h3>
+<p data-en="A chatbot architecture that keeps the conversation in a tree instead of one long history. Each topic gets its own branch, so a clarification question doesn't pollute the main thread. I built it to stop the &quot;context bleeding&quot; and hallucinations you get with long, linear chat logs. Not finished yet.">A chatbot architecture that keeps the conversation in a tree instead of one long history. Each topic gets its own branch, so a clarification question doesn't pollute the main thread. I built it to stop the &quot;context bleeding&quot; and hallucinations you get with long, linear chat logs. Not finished yet.</p>
+                <p class="term-meta" data-en="[ LangGraph · FastAPI · PostgreSQL · Docker ]">[ LangGraph · FastAPI · PostgreSQL · Docker ]</p>
+              <p class="term-links">
+                <a class="chip chip--alt" href="https://branch-gpt-theta.vercel.app/" target="_blank" rel="noopener" data-en="[ demo ]">[ demo ]</a>
+                <a class="chip" href="https://github.com/TiagoSantos16/branchgpt" target="_blank" rel="noopener" data-en="[ github ]">[ github ]</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 4 — Afterk Disaster Evaluator -->
+          <article class="term reveal">
+            <div class="term-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="term-title" data-en="afterk_disaster_evaluator.py">afterk_disaster_evaluator.py</span>
+            </div>
+            <div class="term-body">
+              <figure class="term-shot">
+                <img src="images/afterk.png" alt="Afterk change detection dashboard" width="560" height="320" loading="lazy" />
+                <figcaption class="sr-only" data-en="Afterk Disaster Evaluator: Post-Storm Recovery Dashboard">Afterk Disaster Evaluator: Post-Storm Recovery Dashboard</figcaption>
+              </figure>
+              <h3 data-en="Afterk Disaster Evaluator: Post-Storm Recovery Dashboard">Afterk Disaster Evaluator: Post-Storm Recovery Dashboard</h3>
+<p data-en="A dashboard for emergency teams and municipalities after a bad storm. It ingests satellite and aerial images, runs change detection to flag newly damaged zones, and tracks recovery over the following months: which areas are done, in progress, or still pending. Not finished yet.">A dashboard for emergency teams and municipalities after a bad storm. It ingests satellite and aerial images, runs change detection to flag newly damaged zones, and tracks recovery over the following months: which areas are done, in progress, or still pending. Not finished yet.</p>
+                <p class="term-meta" data-en="[ Python · Change Detection · QGIS · Streamlit ]">[ Python · Change Detection · QGIS · Streamlit ]</p>
+              <p class="term-links">
+                <a class="chip chip--alt" href="https://tiagosantos16.github.io/AfterK_disaster_evaluator/" target="_blank" rel="noopener" data-en="[ demo ]">[ demo ]</a>
+                <a class="chip" href="https://github.com/TiagoSantos16/afterk_disaster_evaluator" target="_blank" rel="noopener" data-en="[ github ]">[ github ]</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section reveal" id="contact">
+      <div class="wrap">
+        <p class="eyebrow" data-en="// contact" data-pt="// contato">// contact</p>
+        <h2 class="section-title" data-en="Find me" data-pt="Encontra-me">Find me</h2>
+
+        <div class="contact-grid">
+          <a class="contact-item" href="https://www.linkedin.com/in/tiago-neto-santos/" target="_blank" rel="noopener">
+            <span class="contact-label" data-en="[ linkedin ]">[ linkedin ]</span>
+            <span class="contact-value">linkedin.com/in/tiago-neto-santos</span>
+          </a>
+          <a class="contact-item" href="https://github.com/TiagoSantos16" target="_blank" rel="noopener">
+            <span class="contact-label" data-en="[ github ]">[ github ]</span>
+            <span class="contact-value">github.com/TiagoSantos16</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <span data-en="tiago.santos © 2026" data-pt="tiago.santos © 2026">tiago.santos © 2026</span>
+      <span class="foot-status" data-en="[ system online ]" data-pt="[ sistema online ]">[ system online ]</span>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
