@@ -19,7 +19,7 @@ MSc in Computer Science and Engineering candidate specializing in Artificial Int
 
 ## ⚙️ Applied AI & Software Engineering Projects
 
-*   **[BranchGPT: Tree-Based AI Conversational Agent](https://github.com/TiagoSantos16/branchgpt)** ([Live Demo](https://branch-gpt-theta.vercel.app/))
+*   **[Ramea: Tree-Based AI Conversational Agent](https://github.com/TiagoSantos16/Ramea-Chat)** ([Live Demo](https://www.ramea-chat.com/))
     *   **Description:** An enterprise-grade chatbot architecture using tree-based state management. Designed to solve "context bleeding" and prevent hallucinations in Large Language Models during complex, multi-turn technical queries.
     *   **Tech Stack:** LangGraph, FastAPI, PostgreSQL (pgvector), Docker, LLM Testing.
 
